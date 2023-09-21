@@ -1,0 +1,98 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container { /* It defines the styles for a container that holds the main content.*/
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header { /* class selector is applied to a header element.*/
+    text-align: center;
+    margin-bottom: 20px; /* bottom of the header to separate it from the content below.*/
+}
+
+.table-container { /* It allows horizontal scrolling if the table content*/
+    overflow-x: auto;
+}
+
+table { /* Defines styles for all tables within the webpage.*/
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+th, td { /*table header cells (th) and table data cells (td)*/
+    padding: 12px 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+thead { /* Defines styles for the table head (header row) section. It sets the background color and text color for header cells.    */
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) { /*styles even-numbered rows in the table body with a light gray background color.*/
+    background-color: #f5f5f5;
+}
+
+.priority { /* style for elements with the class "priority" and makes the text bold.*/
+    font-weight: bold;
+}
+
+.priority.high {
+  color: #e53935; /* Red for high priority */
+}
+
+.priority.medium {
+  color: #f4511e; /* Orange for medium priority */
+}
+
+.priority.low {
+  color: #43a047; /* Green for low priority */
+}
+
+.timestamp {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.alert-type {
+  font-size: 14px;
+  color: #388e3c; /* Green for alert type */
+}
+
+.alert-message {
+  font-size: 16px;
+}
+
+.source-destination { /*Defines styles for elements with the class "source-destination," which are typically links.*/
+    font-size: 14px;
+    color: #1976d2; /* Blue for source/destination */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.source-destination:hover {
+  color: grey; /* Darker blue on hover */
+}
+
+tr:hover {
+  background-color:darkgray; /* Light gray on hover */
+  cursor: pointer;
+}
+
+.source-destination:hover {
+  color: #1565c0; /* Darker blue on hover */
+}

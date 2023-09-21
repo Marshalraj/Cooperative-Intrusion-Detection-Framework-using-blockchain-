@@ -1,0 +1,31 @@
+<!DOCTYPE html>   <!--html 5 -->
+<html lang="en">
+<head> <!--begini of head section -->
+    <meta charset="UTF-8"> <!--encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--webpage adapts to the width of the device's screen and starts with an initial scale of 1.0.-->
+    <title>Snort Intrusion Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">    <!--div is  often used in style and group contents-->
+        <h1>Snort Intrusion Detection System</h1>   <!-- main title of wweb page -->
+        <table>   <!--used to createe a tabel -->
+            <thead>
+                <tr>    <!--represents a table row -->
+                    <th>Timestamp</th>  <!--th reprsents table column header -->
+                    <th>Alert Message</th>
+                    <th>Source IP</th>
+                    <th>Destination IP</th>
+                    <th>Type</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody id="alerts-data">  <!--tb is a table body section-->
+                <!-- Alerts will be dynamically added here using JavaScript -->
+            </tbody>
+        </table>
+
+    </div>
+    <script src="scripts.js"></script>     <!-- to add extra functionalities to the html  -->
+</body>
+</html>
